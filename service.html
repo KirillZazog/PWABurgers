@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="index.js"></script>
+  <title>VintageFood</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#EDA418">
+</head>
+<body>
+<header class = "header">
+  <nav class = "navbar">
+    <a href = "#">
+      <img class = "logo" src = "images/logo.png" alt = "logo">
+    </a>
+    <ul class = "nav-list">
+      <li><a href = "BasicDocument.html" class="navigation_title_main">Главная</a></li>
+      <li><a href = "service.html" class="navigation_title_main">Калории</a></li>
+      <li><a href = "#" class="navigation_title_main">Обратная связь</a></li>
+    </ul>
+    <button type = "button" class = "navigation_button">
+      <img src = "images/Кнопка%20_Корзина_.png" alt = "box">
+    </button>
+  </nav>
+</header>
+<main class="main">
+  <section class="container-calories">
+    <h1 class="calories-title">Учет калорий</h1>
+
+    <div class="calories-summary">
+      <div class="summary-item">
+        <span class="summary-label">Съедено:</span>
+        <span id="totalCalories" class="summary-value">0</span>
+        <span class="summary-unit">ккал</span>
+      </div>
+      <div class="summary-item">
+        <span class="summary-label">Осталось:</span>
+        <span id="remainingCalories" class="summary-value">2000</span>
+        <span class="summary-unit">ккал</span>
+      </div>
+      <div class="progress-container">
+        <div id="caloriesProgress" class="progress-bar"></div>
+      </div>
+    </div>
+
+    <form class="calories-form" name="caloriesForm">
+      <div class="form-row">
+        <input type="text" name="product" placeholder="Продукт" required>
+        <input type="number" name="calories" placeholder="Ккал/100г" min="0" required>
+        <input type="number" name="weight" placeholder="Вес (г)" min="1" value="100">
+        <button type="button" class="add-button" onclick="addFoodItem()">+</button>
+      </div>
+    </form>
+
+    <div id="foodItemsList" class="food-items">
+    </div>
+  </section>
+</main>
+<footer class = "footer">
+  <ul class = "footer_list">
+    <li><a href="#" class="footer_title">Программа лояльности</a></li>
+    <li><a href="#" class="footer_title">Политика конфеденциальности</a></li>
+    <li><a href="#" class="footer_title">Договор оферты</a></li>
+  </ul>
+  <ul class = "footer_page_text">
+    <li><p class = "footer_text">ООО "Burgers"</p></li>
+    <li><p class = "footer_text">©Все права защищены</p></li>
+  </ul>
+  <ul class = "footer_contacts">
+    <li><a href="#"><img src="images/VK%20Circled.png" alt="VK" width="50" height="50" class="footer_images"></a></li>
+    <li><a href="#"><img src="images/Telegram.png" alt="tg" width="60" height="60" class="footer_images"></a></li>
+  </ul>
+</footer>
+
+</body>
+</html>

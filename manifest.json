@@ -1,0 +1,16 @@
+{
+  "name": "VintageFood - Доставка еды",
+  "short_name": "VintageFood",
+  "description": "Быстрая доставка вкусной еды и калькулятор калорий",
+  "start_url": "/BasicDocument.html",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#EDA418",
+  "icons": [
+    {
+      "src": "images/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
