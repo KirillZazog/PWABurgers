@@ -2,6 +2,7 @@ const foodItems = [];
 const baseFoodId = 'fooditem';
 const dailyCalorieLimit = 2000;
 
+// подсчет калорий
 window.addFoodItem = function() {
     const form = document.forms.caloriesForm;
     const calories = parseInt(form.elements.calories.value) || 0;
@@ -98,6 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Регистрация и управление Service Worker
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
         navigator.serviceWorker.register('/service-worker.js')
